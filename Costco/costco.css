@@ -1,0 +1,101 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body{
+font-family: 'Segoe UI', sans-serif;
+}
+
+.header {
+background-color: black;
+padding: 20px;
+text-align: center;
+color: red;
+position: sticky;
+z-index: 1000;
+top: 0;
+left: 0;
+}
+
+
+.ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+overflow: hidden;
+margin-left: 40%;
+}
+
+.li{
+float: left;
+}
+.li a{
+display: inline-block;
+padding: 14px 12px;
+text-align: left;
+text-decoration: none;
+color: yellow;
+}
+.li a:hover{
+color: white;
+}
+.li a:active{
+background-color: none;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: red;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column{
+text-align: center;
+background-color: hotpink;
+padding: 50px 30px 70px;
+}
+
+
+.column1{
+width: 20%;
+text-align: center;
+background-color: none;
+padding: 50px 30px 70px;
+float: left;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+.footer {
+background-color: black;
+padding: 10px;
+margin-top: 10px;
+text-align: center;
+color: red;
+}
+
+@media only screen and (max-width: 300px)
+.text {font-size: 11px}

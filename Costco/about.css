@@ -1,0 +1,103 @@
+*{
+box-sizing: border-box;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 5px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: red;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: red;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+header {
+      background-color: green;
+      color: white;
+      padding: 16px;
+      text-align: center;
+    }
+
+nav {
+      display: flex;
+      justify-content: center;
+      background-color: black;
+    }
+
+nav button {
+      background: none;
+      border: none;
+      color: white;
+      padding: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+nav button:hover {
+      background-color: green;
+    }
+
+    .content {
+      padding: 26px;
+      text-align: center;
+    }
+
+    .hidden {
+      display: none;
+    }
+  
+
+ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+overflow: hidden;
+}
+
+li{
+float: left;
+}
+li a{
+display: inline-block;
+padding: 14px 16px;
+text-align: left;
+text-decoration: none;
+color: red;
+}
+li a:hover{
+color: white;
+}
+li a:active{
+background-color: none;
+}
+
+.footer {
+background-color: black;
+padding: 6px;
+margin-top: 125px;
+text-align: center;
+color: red;
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

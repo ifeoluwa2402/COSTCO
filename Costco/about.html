@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="about.css">
+<link rel="icon" type="image/x-ico" href="image/logo.ico">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial scale=1">
+<title>Costo</title>
+</head>
+<body>
+<div style="color: red; background-color: black; padding: 10px;">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li class="dropdown"><a href="javascript:void(0)">Product</a>
+<div class="dropdown-content">
+<a href="grocery.html">Groceries</a>
+<a href="cleaning.html">Cleaning</a>
+<a href="electronics.html">Electronics</a>
+<a href="kitchen-dining.html">Kitchen & Dining</a>
+</div>
+</li>
+<h2 style="text-align: right; margin-right: 5%; margin-top: 10px;">COSTCO. (ABOUT US)
+<button style="background-color: purple; border-radius: 15px; padding: 10px;"><a href="register.html" style="text-decoration: none; color: white;">Register</a></button>
+<button style="background-color: green; border-radius: 15px; padding: 10px;"><a href="login.html" style="text-decoration: none; color: white;">Login</a></button></h2>
+</ul>
+</div>
+
+<header>
+    <h1>Welcome to COSTCO!</h1>
+  </header>
+
+  <nav>
+    <button onclick="showPage('about')">About</button>
+    <button onclick="showPage('contact')">Contact</button>
+  </nav>
+
+  <div class="content">
+    <div id="about">
+      <h2>About Us</h2>
+      <p>COSTCO is your one-stop destination for all grocery needs. We offer quality products at the best prices.</p>
+      <p>Founded in 2010, we have been serving happy customers for over a decade.</p>
+    </div>
+
+    <div id="contact" class="hidden">
+      <h2>Contact Us</h2>
+      <p>Email: support@costco.com</p>
+      <p>Phone: +1 (800) 123-4567</p>
+      <p>Address: 123 Market Street, Groceryville</p>
+    </div>
+  </div>
+
+  <div class="footer">
+<p style="padding:20px; margi: 20px;">Copyright &copy; 2025 Costco.com. All right reserved.</p>
+</div>
+
+  <script>
+    function showPage(pageId) {
+      document.getElementById('about').classList.add('hidden');
+      document.getElementById('contact').classList.add('hidden');
+      document.getElementById(pageId).classList.remove('hidden');
+    }
+  </script>
+
+</body>
+</html>
